@@ -1,0 +1,32 @@
+MainTable
+-
+id INT PK
+mt_column1 INT
+mt_column2 INT
+
+OneToOne
+-
+id INT PK
+mt_id INT FK - MainTable.id
+oto_column1 INT
+oto_column2 INT
+
+OneToMany
+-
+id INT PK
+mt_id INT FK >- MainTable.id
+otm_column1 INT
+otm_column2 INT
+
+MainTable2
+-
+id INT PK
+mt2_column1 INT
+mt2_column2 INT
+
+ManyToMany
+-
+id INT PK
+mt_id INT FK >- MainTable.id
+mt2_id INT FK >- MainTable2.id
+
